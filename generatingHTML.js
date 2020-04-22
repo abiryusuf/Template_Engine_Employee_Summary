@@ -30,23 +30,23 @@ function generatingHTML(answers){
         <div class="container-fluid">
             <div class="card text-center">
                 <div class="card-header card border-drak mb-4">
-                    <h4>My Team</h4>
+                    <h4>Team of Columbia</h4>
                 </div>
                 <div class="card-body">
                     <div class="row row-cols-1 row-cols-md-3">
                         <div class="col-mb-4">
                             <div class="card border-dark mb-4" style="width: 18rem;">
                                 <div class="card-header">
-                                  <h5>${answers.Manager}</h5>   
+                                  <h5>${answers.managerName}</h5>   
                                   <!-- new things I learn to make a logo from bootstrap -->
                                   <h5><i class="fas fa-mug-hot"></i>  Manager</h5>
                                 </div>
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 14rem;">
                                          <ul class="list-group list-group-flush">
-                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>Ron</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>Ron@gmail.com</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Office: </strong>Manhttan</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>ID:</strong>${answers.managerID}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>${answers.managerEmail}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Office: </strong>${answers.managerOffice}</li>
                                          </ul>
                                     </div>
                                 </div>
@@ -63,9 +63,9 @@ function generatingHTML(answers){
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 14rem;">
                                          <ul class="list-group list-group-flush">
-                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>Robert</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>Robert@gmail.com</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong></li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>${answers.developerID1}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>${answers.developerEmail1}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong>${answers.developerGitHub1}</li>
                                          </ul>
                                     </div>
                                 </div>
@@ -81,9 +81,9 @@ function generatingHTML(answers){
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 14rem;">
                                          <ul class="list-group list-group-flush">
-                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>Herrison</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>H@gmail.com</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Office: </strong></li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>${answers.developerID2}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>${answers.developerEmail_2}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong>${answers.developerGitHub_2}</li>
                                          </ul>
                                     </div>
                                 </div>
@@ -92,16 +92,16 @@ function generatingHTML(answers){
                         <div class="col-mb-4">
                             <div class="card border-dark mb-4" style="width: 18rem;">
                                 <div class="card-header">
-                                  <h5>${developerName3}</h5>   
+                                  <h5>${answers.developerName3}</h5>   
                                   <!-- new things I learn to make a logo from bootstrap -->
                                   <h5><i class="fas fa-glasses"></i> Developer</h5>
                                 </div>
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 14rem;">
                                          <ul class="list-group list-group-flush">
-                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>Sun</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>sun@gmail.com</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong></li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>${answers.developerID_3}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>${answers.developerEmail_3}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong>${answers.developerGitHub_3}</li>
                                          </ul>
                                     </div>
                                 </div>
@@ -110,16 +110,16 @@ function generatingHTML(answers){
                         <div class="col-mb-4">
                             <div class="card border-dark mb-4" style="width: 20rem;">
                                 <div class="card-header">
-                                  <h5>${developerName4}</h5>   
+                                  <h5>${answers.developerName4}</h5>   
                                   <!-- new things I learn to make a logo from bootstrap -->
                                   <h5><i class="fas fa-glasses"></i>  Developer</h5>
                                 </div>
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 14rem;">
                                          <ul class="list-group list-group-flush">
-                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>Simon</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>S@gmail.com</li>
-                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong></li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>ID: </strong>${answers.developerID_4}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>Email: </strong>${answers.developerEmail_4}</li>
+                                             <li class="list-group-item" style="text-align:left;"><strong>GitHub: </strong>${answers.developerGitHub_4}</li>
                                          </ul>
                                     </div>
                                 </div>
@@ -134,9 +134,9 @@ function generatingHTML(answers){
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 14rem;">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>abir</li>
-                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin:</strong>abiryusuf</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.internID}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailIntern}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin:</strong>${answers.InternGitHub}</li>
                                     </ul>
                                 </div>
                             </div>

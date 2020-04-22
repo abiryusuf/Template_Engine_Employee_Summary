@@ -1,0 +1,29 @@
+{
+  "name": "template_engine_employee_summary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  },
+  "devDependencies": {
+    "jest": "^25.4.0"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abiryusuf/Template_Engine_Employee_Summary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abiryusuf/Template_Engine_Employee_Summary/issues"
+  },
+  "homepage": "https://github.com/abiryusuf/Template_Engine_Employee_Summary#readme"
+}

@@ -4,12 +4,12 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util =require("util");
 //jest runs tests, but npm packages includes jests
-const jest = require("jest");
-const generaHTML = require("./generatingHTML");
+//const jest = require("jest");
+const generatingHTML = require("./generatingHTML");
 //wirteFile will create html page
-const writeFileAsync = util.promisify(fs.writeFileAsync);
+const writeFileAsync = util.promisify(fs.writeFile);
 
-function prompt(){
+function promptUser(){
     return inquirer.prompt([
         {
             type:"input",
@@ -137,7 +137,7 @@ function prompt(){
         
         {
             type: "input",
-            name: "emialIntern",
+            name: "emailIntern",
             message: "Enter Email of Intern: "
         },
         {
@@ -150,11 +150,11 @@ function prompt(){
     //create  asyc function
 
     async function init(){
-        console.log("asyn")
+        console.log("abir")
         //Using try catch block throw the exception 
         try{
-            const answers = await prompt();
-            const html = generaHTML(answers);
+            const answers = await promptUser();
+            const html = generatingHTML(answers);
 
             //wirteFile will create html page with the answers
             await writeFileAsync("index.html", html);
