@@ -6,7 +6,7 @@ describe("gitHub", ()=>{
         const value = "gitHubUser";
         //creating obj
         const obj = new Developer("Robert", 1, "robert@gmail.com", value);
-        expect(obj).toBe(value);
+        expect(obj.github).toBe(value);
 
     });
 
@@ -17,7 +17,7 @@ describe("getRole", ()=>{
         const value = "Developer";
         //creating obj
         const obj = new Developer("Robert", 1, "robert@gmail.com", value);
-        expect(obj).toBe(value);
+        expect(obj.getRole()).toBe(value);
 
     });
 
